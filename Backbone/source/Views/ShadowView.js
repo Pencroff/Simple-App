@@ -5,15 +5,16 @@
  * Time: 16:40
  */
 
-/*global Backbone:true, SimpleShadow:true*/
+/*global $:true, Backbone:true, SimpleShadow:true*/
 
 var ShadowView = Backbone.View.extend({
+    el: $("#parameters"),
     initialize: function () {
         'use strict';
         this.render();
     },
     render: function () {
-
+        'use strict';
         // Compile the template using underscore
         var template = _.template( $("#search_template").html(), {} );
         // Load the compiled HTML into the Backbone "el"
@@ -22,8 +23,8 @@ var ShadowView = Backbone.View.extend({
     events: {
         "click input[type=button]": "doSearch"
     },
-    doSearch: function( event ){
+    doSearch: function (event) {
+        'use strict';
         // Button clicked, you can access the element that was clicked with event.currentTarget
-        alert( "Search for " + $("#search_input").val() );
     }
 });
