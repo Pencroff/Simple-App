@@ -21,56 +21,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/index.html">
+        <entry file="file://$PROJECT_DIR$/backbone_require/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="39" selection-start="954" selection-end="964" vertical-scroll-proportion="-10.0">
+            <state line="10" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="-7.096774">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleShadow.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/source/Models/SimpleShadow.js">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backbone_require/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="15" selection-start="196" selection-end="203" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleShadowCollection.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/source/Collections/SimpleShadowCollection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="150" selection-end="172" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShadowModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/source/Models/ShadowModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="43" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShadowView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/source/Views/ShadowView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleShadowTemplate.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Backbone/source/Templates/SimpleShadowTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="69" selection-start="287" selection-end="287" vertical-scroll-proportion="0.26586103">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,18 +53,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Backbone/source/SimpleShadow.js" />
-        <option value="$PROJECT_DIR$/Backbone/source/ShadowModel.js" />
-        <option value="$PROJECT_DIR$/Backbone/example.html" />
-        <option value="ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js" />
-        <option value="ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js" />
-        <option value="$PROJECT_DIR$/Backbone/source/Models/SimpleShadow.js" />
-        <option value="$PROJECT_DIR$/Backbone/source/Collections/SimpleShadowCollection.js" />
-        <option value="$PROJECT_DIR$/Backbone/source/Models/ShadowModel.js" />
-        <option value="$PROJECT_DIR$/Backbone/source/Templates/ParamTemplate.js" />
-        <option value="$PROJECT_DIR$/Backbone/source/Templates/SimpleShadowTemplate.html" />
-        <option value="$PROJECT_DIR$/Backbone/index.html" />
-        <option value="$PROJECT_DIR$/Backbone/source/Views/ShadowView.js" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/libs/jquery/jquery.js" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/views/home/main.js" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/router.js" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/views/projects/list.js" />
+        <option value="$PROJECT_DIR$/modular-backbone/index.html" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/libs/backbone/loader.js" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/index.html" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/js/index.js" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/js/modules/ciklumers/list_view.js" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/js/modules/ciklumers/model.js" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/js/modules/examples/hierarchy_classes.js" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/js/modules/examples/sync_override.js" />
+        <option value="$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/main.js" />
+        <option value="$PROJECT_DIR$/modular-backbone/js/views/users/list.js" />
+        <option value="$PROJECT_DIR$/backbone_require/index.html" />
       </list>
     </option>
   </component>
@@ -167,7 +133,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
+              <option name="myItemId" value="backbone_require" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -181,81 +147,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
+              <option name="myItemId" value="backbone_require" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Simple-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Simple-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Simple-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Collections" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,20 +163,25 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modular-backbone/index.html" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\Simple-App\modular-backbone" />
+      <recent name="D:\Work\Simple-App\modular-backbone\js\views" />
+      <recent name="D:\Work\Simple-App\modular-backbone\js" />
       <recent name="D:\Work\Simple-App\Backbone\source\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.example.html">
-    <configuration default="false" name="example.html" type="JavascriptDebugSession" factoryName="Local" temporary="true">
+  <component name="RunManager" selected="JavaScript Debug.Example">
+    <configuration default="false" name="SimpleApp" type="JavascriptDebugSession" factoryName="Local" temporary="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
+        <option name="engineId" value="chrome" />
         <option name="fileUrl" value="file://$PROJECT_DIR$/Backbone/example.html" />
       </JSDebuggerConfigurationSettings>
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
@@ -294,12 +195,32 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.example.html" />
+    <configuration default="false" name="Example" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="chrome" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/modular-backbone/index.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Ciclum-Example" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="chrome" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/index.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Example" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Ciclum-Example" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.SimpleApp" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.example.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.SimpleApp" />
       </list>
     </recent_temporary>
   </component>
@@ -332,13 +253,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1585831" sideWeight="0.7679144" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23208556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17002724" sideWeight="0.6064171" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39358288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -346,7 +267,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -404,104 +325,72 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/artyomtrityak-ciklum_backbonejs/public/js/examples.js</url>
+          <line>1</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/main.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/views/home/main.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/libs/require/require-full.js</url>
+          <line>527</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/views/projects/list.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/views/users/list.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/app.js</url>
+          <line>9</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/app.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modular-backbone/js/router.js</url>
+          <line>35</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" log-message="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Backbone/twitter-bootstrap/.issue-guidelines.js">
+    <entry file="file://$PROJECT_DIR$/backbone_require/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/twitter-bootstrap/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/twitter-bootstrap/js/.jshintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/twitter-bootstrap/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/twitter-bootstrap/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/twitter-bootstrap/.issue-guidelines.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1121" column="7" selection-start="16534" selection-end="16534" vertical-scroll-proportion="0.33278146">
+        <state line="10" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="-7.096774">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/example.html">
+    <entry file="file://$PROJECT_DIR$/backbone_require/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.36555892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="39" selection-start="954" selection-end="964" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/source/Collections/SimpleShadowCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="150" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/source/Models/SimpleShadow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="196" selection-end="203" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/source/Models/ShadowModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/source/Views/ShadowView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/source/Templates/SimpleShadowTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="69" selection-start="287" selection-end="287" vertical-scroll-proportion="0.26586103">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
