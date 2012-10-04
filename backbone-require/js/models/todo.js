@@ -1,8 +1,9 @@
+/*global define:true*/
 define([
 	'underscore',
 	'backbone'
-], function( _, Backbone ) {
-
+], function (_, Backbone) {
+    'use strict';
 	var TodoModel = Backbone.Model.extend({
 		// Default attributes for the todo
 		// and ensure that each todo created has `title` and `completed` keys.
@@ -18,6 +19,5 @@ define([
 			});
 		}
 	});
-
 	return TodoModel;
 });
