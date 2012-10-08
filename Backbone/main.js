@@ -1,0 +1,42 @@
+/**
+ * Created with JetBrains WebStorm.
+ * User: Sergei Danilov
+ * Date: 08.10.12
+ * Time: 15:13
+ * File: main
+ */
+
+/*global require:true*/
+
+require.config({
+    // The shim config allows us to configure dependencies for
+    // scripts that do not call define() to register a module
+    urlArgs: 'cb=' + Math.random(),
+    shim: {
+        'underscore': {
+            exports: '_'
+        },
+        'backbone': {
+            deps: [
+                'underscore',
+                'jquery'
+            ],
+            exports: 'Backbone'
+        }
+    },
+    paths: {
+        jquery: 'libs/jquery/jquery',
+        underscore: 'libs/underscore/underscore-lodash',
+        backbone: 'libs/backbone/backbone',
+        localStorage: 'libs/backbone/backbone-localstorage',
+        text: 'libs/require/require-text'
+    }
+});
+
+require([
+    'source/views/ShadowView'
+], function (AppView) {
+    'use strict';
+    // Initialize the application view
+    new AppView();
+});

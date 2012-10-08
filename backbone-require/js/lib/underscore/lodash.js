@@ -1874,7 +1874,7 @@
    * @static
    * @memberOf _
    * @alias include
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Mixed} target The value to check for.
    * @returns {Boolean} Returns `true` if the `target` element is found, else `false`.
@@ -1908,7 +1908,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function|String} callback|property The function called per iteration
    *  or property name to count by.
@@ -1935,7 +1935,7 @@
    * @static
    * @memberOf _
    * @alias all
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} [callback=identity] The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -1956,7 +1956,7 @@
    * @static
    * @memberOf _
    * @alias select
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} [callback=identity] The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -1977,7 +1977,7 @@
    * @static
    * @memberOf _
    * @alias detect
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} callback The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -2002,7 +2002,7 @@
    * @static
    * @memberOf _
    * @alias each
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} callback The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -2026,7 +2026,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function|String} callback|property The function called per iteration
    *  or property name to group by.
@@ -2057,7 +2057,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function|String} methodName The name of the method to invoke or
    *  the function invoked per iteration.
@@ -2093,7 +2093,7 @@
    * @static
    * @memberOf _
    * @alias collect
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} [callback=identity] The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -2114,7 +2114,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {String} property The property to pluck.
    * @returns {Array} Returns a new array of property values.
@@ -2146,7 +2146,7 @@
    * @static
    * @memberOf _
    * @alias foldl, inject
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} callback The function called per iteration.
    * @param {Mixed} [accumulator] Initial value of the accumulator.
@@ -2182,7 +2182,7 @@
    * @static
    * @memberOf _
    * @alias foldr
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} callback The function called per iteration.
    * @param {Mixed} [accumulator] Initial value of the accumulator.
@@ -2220,7 +2220,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} [callback=identity] The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -2241,7 +2241,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to inspect.
    * @returns {Number} Returns `collection.length` or number of own enumerable properties.
    * @example
@@ -2269,7 +2269,7 @@
    * @static
    * @memberOf _
    * @alias any
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function} [callback=identity] The function called per iteration.
    * @param {Mixed} [thisArg] The `this` binding of `callback`.
@@ -2293,7 +2293,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Function|String} callback|property The function called per iteration
    *  or property name to sort by.
@@ -2338,7 +2338,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to convert.
    * @returns {Array} Returns the new converted array.
    * @example
@@ -2365,7 +2365,7 @@
    *
    * @static
    * @memberOf _
-   * @category Collections
+   * @category collections
    * @param {Array|Object|String} collection The collection to iterate over.
    * @param {Object} properties The object of properties/values to filter by.
    * @returns {Array} Returns a new array of elements that contain the given `properties`.

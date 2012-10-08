@@ -5,26 +5,37 @@
  * Time: 16:40
  */
 
-/*global $:true, Backbone:true, SimpleShadow:true*/
-
-var ShadowView = Backbone.View.extend({
-    el: $("#parameters"),
-    initialize: function () {
-        'use strict';
-        this.render();
-    },
-    render: function () {
-        'use strict';
-        // Compile the template using underscore
-        var template = _.template( $("#search_template").html(), {} );
-        // Load the compiled HTML into the Backbone "el"
-        this.el.html( template );
-    },
-    events: {
-        "click input[type=button]": "doSearch"
-    },
-    doSearch: function (event) {
-        'use strict';
-        // Button clicked, you can access the element that was clicked with event.currentTarget
-    }
+/*global define:true, $:true, Backbone:true, SimpleShadow:true*/
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'source/models/ShadowModel',
+    'text!source/templates/ShadowTemplate.html'
+], function ($, _, Backbone, ShadowModel, template) {
+    'use strict';
+    var ShadowView = Backbone.View.extend({
+        el: $("#shadowView"),
+        // Compile our stats template
+        template: _.template(template),
+        initialize: function () {
+            this.model = new ShadowModel();
+            this.render();
+        },
+        render: function () {
+            // Load the compiled HTML into the Backbone "el"
+            this.$el.html(
+                this.template({
+                    hShadow: 1,
+                    vShadow: 5
+                })
+            );
+        },
+        renderTemplate: function () {
+//            var result,
+//                params = {};
+//            params.hShadow = this.model.
+        }
+    });
+    return ShadowView;
 });

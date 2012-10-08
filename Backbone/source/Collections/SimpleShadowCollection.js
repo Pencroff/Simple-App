@@ -5,8 +5,16 @@
  * Time: 17:51
  */
 
-/*global Backbone:true,SimpleShadow:true*/
+/*global define:true, Backbone:true, SimpleShadow:true*/
 
-var SimpleShadowCollection = Backbone.Collection.extend({
-    model: SimpleShadow
+define([
+    'underscore',
+    'backbone',
+    'source/models/SimpleShadow'
+], function (_, Backbone, simpleModel) {
+    'use strict';
+    var SimpleShadowCollection = Backbone.Collection.extend({
+        model: simpleModel
+    });
+    return SimpleShadowCollection;
 });
