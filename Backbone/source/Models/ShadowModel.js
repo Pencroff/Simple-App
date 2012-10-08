@@ -20,8 +20,8 @@ define([
             text: "Sample text"
         },
         initialize: function () {
-            this.shadows = new SimpleShadowCollection();
-            this.shadows.add(new SimpleShadow());
+            this.set('shadows', new SimpleShadowCollection());
+            this.get('shadows').add(new SimpleShadow());
         }
     });
     return ShadowModel;
