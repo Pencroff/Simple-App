@@ -17,12 +17,22 @@ define([
         defaults: {
             shadows: null,
             text: "Sample text",
-            color: 0x333,
-            background: 0xEEE
+            color: '537',
+            background: 'AEC'
         },
         initialize: function () {
-            this.set('shadows', new SimpleShadowCollection());
-            this.get('shadows').add(new SimpleShadow());
+            var collection = new SimpleShadowCollection(),
+                element;
+            this.set('shadows', collection);
+            element = new SimpleShadow();
+            element.set({id: element.cid});
+            collection.add(element);
+            element = new SimpleShadow();
+            element.set({id: element.cid});
+            collection.add(element);
+            element = new SimpleShadow();
+            element.set({id: element.cid});
+            collection.add(element);
         }
     });
     return ShadowModel;

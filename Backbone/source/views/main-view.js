@@ -11,29 +11,35 @@ define([
     'underscore',
     'backbone',
     'source/models/shadow-model',
+    'source/views/main-param-view',
+    'source/views/shadow-param-view',
+    'source/views/example-view',
     'text!source/templates/main-template.html',
-    'text!source/templates/main-param-template.html',
-    'text!source/templates/shadow-param-template.html',
     'common'
-], function ($, _, Backbone, ShadowModel, template, mainParamTemplate, shadowParamTemplate, Common) {
+], function ($, _, Backbone, ShadowModel, MainParamModel, ShadowParamModel, ExampleView, template, Common) {
     'use strict';
     var MainView = Backbone.View.extend({
-        el: $("#shadowView"),
+        el: '#shadowView',
         // Compile our stats template
         template: _.template(template),
-        mainParamTemplate: _.template(mainParamTemplate),
-        shadowParamTemplate: _.template(shadowParamTemplate),
         events: {
             'change .edit':	'updateOnChange',
             'keypress .edit': 'updateOnEnter'
         },
         initialize: function () {
             this.model = new ShadowModel();
+            this.mainParamModel = new MainParamModel({el: '#main-param', model: this.model});
+            this.shadowParamModel = new ShadowParamModel({el: '#shadow-param-collection', model: this.model});
+            this.exampleView = new ExampleView({el: '#example', model: this.model});
+            this.on('render', this.mainParamModel.render, this.mainParamModel);
+            this.on('render', this.shadowParamModel.render, this.shadowParamModel);
+            this.on('render', this.exampleView.render, this.exampleView);
             this.render();
         },
         render: function () {
             // Load the compiled HTML into the Backbone "el"
-            this.$el.html(this.renderTemplate());
+            //this.$el.html(this.renderTemplate());
+            this.trigger('render');
         },
         renderTemplate: function () {
             var result,

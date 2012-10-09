@@ -11,7 +11,7 @@
 require.config({
     // The shim config allows us to configure dependencies for
     // scripts that do not call define() to register a module
-    urlArgs: 'cb=' + Math.random(),
+    //urlArgs: 'cb=' + Math.random(),
     //urlArgs: 'ver=' + 3,
     shim: {
         'underscore': {

@@ -16,9 +16,6 @@ define([
             vShadow: 1,
             blur: 1,
             color: 0,
-            colorR: 0,
-            colorG: 0,
-            colorB: 0,
             opacity: 1
         },
         initialize: function () {
