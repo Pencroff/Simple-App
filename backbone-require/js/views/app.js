@@ -107,7 +107,7 @@ define([
 				return;
 			}
 
-			Todos.create( this.newAttributes() );
+			Todos.create(this.newAttributes());
 			this.input.val('');
 		},
 

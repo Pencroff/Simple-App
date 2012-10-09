@@ -9,15 +9,16 @@
 define([
     'underscore',
     'backbone',
-    'source/models/SimpleShadow',
-    'source/collections/SimpleShadowCollection'
+    'source/models/simple-shadow',
+    'source/collections/simple-shadows'
 ],  function (_, Backbone, SimpleShadow, SimpleShadowCollection) {
     'use strict';
     var ShadowModel = Backbone.Model.extend({
         defaults: {
             shadows: null,
-            background: 0xEEE,
-            text: "Sample text"
+            text: "Sample text",
+            color: 0x333,
+            background: 0xEEE
         },
         initialize: function () {
             this.set('shadows', new SimpleShadowCollection());

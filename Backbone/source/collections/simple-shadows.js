@@ -10,7 +10,7 @@
 define([
     'underscore',
     'backbone',
-    'source/models/SimpleShadow'
+    'source/models/simple-shadow'
 ], function (_, Backbone, simpleModel) {
     'use strict';
     var SimpleShadowCollection = Backbone.Collection.extend({

@@ -14,8 +14,11 @@ define([
         defaults: {
             hShadow: 1,
             vShadow: 1,
-            blur: 0,
-            color: 0xF00,
+            blur: 1,
+            color: 0,
+            colorR: 0,
+            colorG: 0,
+            colorB: 0,
             opacity: 1
         },
         initialize: function () {

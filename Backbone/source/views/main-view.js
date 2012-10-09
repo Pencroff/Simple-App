@@ -10,18 +10,22 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'source/models/ShadowModel',
-    'text!source/templates/ShadowTemplate.html',
+    'source/models/shadow-model',
+    'text!source/templates/main-template.html',
+    'text!source/templates/main-param-template.html',
+    'text!source/templates/shadow-param-template.html',
     'common'
-], function ($, _, Backbone, ShadowModel, template, Common) {
+], function ($, _, Backbone, ShadowModel, template, mainParamTemplate, shadowParamTemplate, Common) {
     'use strict';
-    var ShadowView = Backbone.View.extend({
+    var MainView = Backbone.View.extend({
         el: $("#shadowView"),
         // Compile our stats template
         template: _.template(template),
+        mainParamTemplate: _.template(mainParamTemplate),
+        shadowParamTemplate: _.template(shadowParamTemplate),
         events: {
             'change .edit':	'updateOnChange',
-            'keypress .edit':	'updateOnEnter'
+            'keypress .edit': 'updateOnEnter'
         },
         initialize: function () {
             this.model = new ShadowModel();
@@ -60,5 +64,5 @@ define([
             });
         }
     });
-    return ShadowView;
+    return MainView;
 });

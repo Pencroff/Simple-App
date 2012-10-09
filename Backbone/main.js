@@ -12,6 +12,7 @@ require.config({
     // The shim config allows us to configure dependencies for
     // scripts that do not call define() to register a module
     urlArgs: 'cb=' + Math.random(),
+    //urlArgs: 'ver=' + 3,
     shim: {
         'underscore': {
             exports: '_'
@@ -34,7 +35,7 @@ require.config({
 });
 
 require([
-    'source/views/ShadowView'
+    'source/views/main-view'
 ], function (AppView) {
     'use strict';
     // Initialize the application view
