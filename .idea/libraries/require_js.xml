@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="require.js" type="javaScript">
+    <CLASSES />
+    <DOCUMENTATION>
+      <root url="http://requirejs.org/" />
+    </DOCUMENTATION>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Backbone/libs/require/require.js" />
+    </SOURCES>
+  </library>
+</component>

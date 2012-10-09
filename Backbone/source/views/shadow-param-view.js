@@ -17,6 +17,9 @@ define([
     var ShadowParamView = Backbone.View.extend({
         template: _.template(shadowParamTemplate),
         initialize: function () {},
+        events: {
+            'change .edit-row':	'updateModel'
+        },
         render: function () {
             var collection, result = '';
             if (this.model === null) {
@@ -27,6 +30,14 @@ define([
                 result += this.template(element.toJSON());
             }, this);
             this.$el.html(result);
+        },
+        updateModel: function () {
+            var collection = this.model.get("shadows").models;
+            _.each($('.edit-row'), function (element) {
+                var attr = element.getAttribute("data-field");
+                collection[0].set(attr, element.value);
+            }, this);
+            this.trigger('change:shadow');
         }
     });
     return ShadowParamView;

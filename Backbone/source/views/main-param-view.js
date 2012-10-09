@@ -16,12 +16,22 @@ define([
     'use strict';
     var MainParamView = Backbone.View.extend({
         template: _.template(mainParamTemplate),
+        events: {
+            'change .edit':	'updateModel'
+        },
         initialize: function () {},
         render: function () {
             if (this.model === null) {
                 return;
             }
             this.$el.html(this.template(this.model.toJSON()));
+        },
+        updateModel: function () {
+            _.each($('.edit'), function (element) {
+                var attr = element.getAttribute("data-field");
+                this.model.set(attr, element.value);
+            }, this);
+            this.trigger('change:main');
         }
     });
     return MainParamView;

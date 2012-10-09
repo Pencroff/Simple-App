@@ -13,10 +13,10 @@ define([
     var SimpleShadow = Backbone.Model.extend({
         defaults: {
             hShadow: 1,
-            vShadow: 1,
-            blur: 1,
-            color: 0,
-            opacity: 1
+            vShadow: 2,
+            blur: 3,
+            color: '111',
+            opacity: 0.9
         },
         initialize: function () {
         }

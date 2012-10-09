@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Underscore.js" type="javaScript">
+    <CLASSES />
+    <DOCUMENTATION>
+      <root url="http://documentcloud.github.com/underscore/" />
+    </DOCUMENTATION>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Backbone/libs/underscore/underscore-lodash.js" />
+    </SOURCES>
+  </library>
+</component>
