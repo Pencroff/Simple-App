@@ -17,34 +17,35 @@ define([
         defaults: {
             shadows: null,
             text: "Sample text",
-            color: '537',
-            background: 'AEC',
-            shadowStyle: ""
+            color: 'fff',
+            background: 'ccc',
+            shadowStyle: ''
         },
         initialize: function () {
             var collection = new SimpleShadowCollection(),
                 element;
             this.on('change', this.refreshStyle, this);
+            element = new SimpleShadow();
+            element.set({id: element.cid});
+            collection.add(element);
+            element = new SimpleShadow();
+            element.set({id: element.cid});
+            collection.add(element);
+            element = new SimpleShadow();
+            element.set({id: element.cid});
+            collection.add(element);
             this.set('shadows', collection);
-            element = new SimpleShadow();
-            element.set({id: element.cid});
-            collection.add(element);
-            element = new SimpleShadow();
-            element.set({id: element.cid});
-            collection.add(element);
-            element = new SimpleShadow();
-            element.set({id: element.cid});
-            collection.add(element);
         },
-        /*Example text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;*/
         refreshStyle: function () {
-            var collection = this.get("shadows"),
-                template = _.template('<%= hShadow %>"px <%= vShadow %>"px <%= blur %>"px <%= color %>"px'),
+            var collection = this.get("shadows").models,
+                template = _.template('<%= hShadow %>px <%= vShadow %>px <%= blur %>px #<%= color %>'),
                 pref = 'text-shadow:',
                 result = '';
             _.each(collection, function (element) {
-                result += ',';
-                result += template(element);
+                if (result !== '') {
+                    result = ',' + result;
+                }
+                result = ' ' + template(element.toJSON()) + result;
             });
             result = pref + result + ';';
             this.set('shadowStyle', result);

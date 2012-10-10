@@ -32,10 +32,12 @@ define([
             this.$el.html(result);
         },
         updateModel: function () {
-            var collection = this.model.get("shadows").models;
+            var collection = this.model.get("shadows");
             _.each($('.edit-row'), function (element) {
-                var attr = element.getAttribute("data-field");
-                collection[0].set(attr, element.value);
+                var attr = element.getAttribute("data-field"),
+                    id = element.getAttribute("data-cid"),
+                    curElement = collection.getByCid(id);
+                curElement.set(attr, element.value);
             }, this);
             this.model.trigger('change');
         }
