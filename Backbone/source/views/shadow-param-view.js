@@ -37,7 +37,7 @@ define([
                 var attr = element.getAttribute("data-field");
                 collection[0].set(attr, element.value);
             }, this);
-            this.trigger('change:shadow');
+            this.model.trigger('change');
         }
     });
     return ShadowParamView;
