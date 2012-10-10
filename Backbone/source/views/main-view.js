@@ -15,7 +15,7 @@ define([
     'source/views/shadow-param-view',
     'source/views/example-view',
     'text!source/templates/main-template.html',
-    'common'
+    'source/common'
 ], function ($, _, Backbone, ShadowModel, MainParamView, ShadowParamView, ExampleView, template, Common) {
     'use strict';
     var MainView = Backbone.View.extend({
