@@ -10,8 +10,9 @@ define([
     'underscore',
     'backbone',
     'source/models/simple-shadow',
-    'source/collections/simple-shadows'
-],  function (_, Backbone, SimpleShadow, SimpleShadowCollection) {
+    'source/collections/simple-shadows',
+    'source/common'
+],  function (_, Backbone, SimpleShadow, SimpleShadowCollection, Common) {
     'use strict';
     var ShadowModel = Backbone.Model.extend({
         defaults: {
@@ -38,14 +39,17 @@ define([
         },
         refreshStyle: function () {
             var collection = this.get("shadows").models,
-                template = _.template('<%= hShadow %>px <%= vShadow %>px <%= blur %>px #<%= color %>'),
+                template = _.template('<%= hShadow %>px <%= vShadow %>px <%= blur %>px <%= fullColor %>'),
                 pref = 'text-shadow:',
                 result = '';
             _.each(collection, function (element) {
-                if (result !== '') {
-                    result = ',' + result;
+                var curColor = element.get('color');
+                if (Common.isColor(curColor)) {
+                    if (result !== '') {
+                        result = ',' + result;
+                    }
+                    result = ' ' + template(element.toJSON()) + result;
                 }
-                result = ' ' + template(element.toJSON()) + result;
             });
             result = pref + result + ';';
             this.set('shadowStyle', result);

@@ -3,7 +3,7 @@
 define([], function () {
     'use strict';
 	return {
-        Converter: {
+        converter: {
             rgbToHex: function (r, g, b) {
                 var decColor = (r << 16) + (g << 8) + b;
                 return decColor.toString(16);
@@ -11,7 +11,7 @@ define([], function () {
             hexToRgb: function (hex) {
                 var result = null;
                 // Look for #a0b1c2
-                result = /#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(hex);
+                result = /([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(hex);
                 if (result) {
                     return {
                         r: parseInt(result[1], 16),
@@ -20,7 +20,7 @@ define([], function () {
                     };
                 }
                 // Look for #fff
-                result = /#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(hex);
+                result = /([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(hex);
                 if (result) {
                     return {
                         r: parseInt(result[1] + result[1], 16),
@@ -31,7 +31,7 @@ define([], function () {
                 return result;
             }
         },
-        IsColor: function (colorHex) {
+        isColor: function (colorHex) {
             var regColorCode = /^(#)?([0-9a-fA-F]{3})([0-9a-fA-F]{3})?$/;
             return regColorCode.test(colorHex);
         },
