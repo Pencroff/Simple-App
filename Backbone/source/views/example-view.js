@@ -14,7 +14,7 @@ define([
     'text!source/templates/example-template.html'
 ], function ($, _, Backbone, exampleTemplate) {
     'use strict';
-    var ShadowParamView = Backbone.View.extend({
+    var ExampleView = Backbone.View.extend({
         template: _.template(exampleTemplate),
         initialize: function () {},
         render: function () {
@@ -24,5 +24,5 @@ define([
             this.$el.html(this.template(this.model.toJSON()));
         }
     });
-    return ShadowParamView;
+    return ExampleView;
 });

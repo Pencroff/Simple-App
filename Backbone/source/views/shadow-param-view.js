@@ -11,12 +11,15 @@ define([
     'jquery',
     'underscore',
     'backbone',
+    'source/models/simple-shadow',
     'text!source/templates/shadow-param-template.html'
-], function ($, _, Backbone, shadowParamTemplate) {
+], function ($, _, Backbone, SimpleShadow, shadowParamTemplate) {
     'use strict';
     var ShadowParamView = Backbone.View.extend({
         template: _.template(shadowParamTemplate),
-        initialize: function () {},
+        initialize: function () {
+            this.model.on('add-row', this.addRow, this);
+        },
         events: {
             'change .edit-row':	'updateModel',
             'click .delete-row': 'deleteRow'
@@ -32,18 +35,31 @@ define([
             }, this);
             this.$el.html(result);
         },
-        updateModel: function () {
-            var collection = this.model.get("shadows");
-            _.each($('.edit-row'), function (element) {
-                var attr = element.getAttribute("data-field"),
-                    id = element.getAttribute("data-cid"),
-                    curElement = collection.getByCid(id);
-                curElement.set(attr, element.value);
-            }, this);
+        addRow: function () {
+            var collection = this.model.get('shadows'),
+                element = new SimpleShadow();
+            collection.add(element);
+            this.render();
+            this.model.trigger('add');
+        },
+        updateModel: function (e) {
+            var htmlElement = e.currentTarget,
+                id = htmlElement.getAttribute("data-cid"),
+                collection = this.model.get("shadows"),
+                element = collection.getByCid(id),
+                attr = htmlElement.getAttribute("data-field");
+            element.set(attr, htmlElement.value);
             this.model.trigger('change');
         },
-        deleteRow: function () {
-
+        deleteRow: function (e) {
+            var id = e.currentTarget.getAttribute("data-cid"),
+                collection = this.model.get('shadows'),
+                element = collection.getByCid(id);
+            if (element) {
+                collection.remove(element);
+                this.render();
+                this.model.trigger('remove');
+            }
         }
     });
     return ShadowParamView;

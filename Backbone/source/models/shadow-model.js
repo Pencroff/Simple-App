@@ -25,7 +25,9 @@ define([
         initialize: function () {
             var collection = new SimpleShadowCollection(),
                 element;
+            this.on('add', this.refreshStyle, this);
             this.on('change', this.refreshStyle, this);
+            this.on('remove', this.refreshStyle, this);
             element = new SimpleShadow();
             element.set({id: element.cid});
             collection.add(element);
