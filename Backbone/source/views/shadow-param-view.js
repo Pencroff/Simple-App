@@ -18,7 +18,8 @@ define([
         template: _.template(shadowParamTemplate),
         initialize: function () {},
         events: {
-            'change .edit-row':	'updateModel'
+            'change .edit-row':	'updateModel',
+            'click .delete-row': 'deleteRow'
         },
         render: function () {
             var collection, result = '';
@@ -40,6 +41,9 @@ define([
                 curElement.set(attr, element.value);
             }, this);
             this.model.trigger('change');
+        },
+        deleteRow: function () {
+
         }
     });
     return ShadowParamView;
