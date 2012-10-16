@@ -50,6 +50,7 @@ define([
             } else {
                 result = '';
             }
+            //result.replace(new RegExp('\),', 'g'), '),\r\n');
             this.set('shadowStyle', result);
         }
     });
