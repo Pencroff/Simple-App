@@ -26,20 +26,14 @@ define([
             'click .add-row':	'addShadowRow'
         },
         initialize: function () {
-            this.mainView = new MainParamView({el: '#main-param', model: this.model.main });
+            var collection = this.model.get('collection');
+            this.mainView = new MainParamView({el: '#main-param', model: this.model});
             this.mainView.render();
-//            $('#main-param').html(mainView.el);
-//            this.mainParamView = new MainParamView({el: '#main-param', model: this.model});
-//            this.shadowParamView = new ShadowParamView({el: '#shadow-param-collection', model: this.model});
             this.exampleView = new ExampleView({el: '#example', model: this.model});
             this.exampleView.render();
-            this.model.shadows.on('add', this.showNewShadowRow, this);
-            this.model.shadows.on('change', this.model.main.refreshStyle, this.model.main);
-            this.model.main.on('change', this.render, this);
-//            this.model.on('add', this.render, this);
-//            this.model.on('change-single-model', this.render, this);
-//            this.model.on('remove', this.render, this);
-            //this.render();
+            collection.on('add', this.showNewShadowRow, this);
+            collection.on('change', this.model.refreshStyle, this.model);
+            this.model.on('change', this.render, this);
         },
         render: function () {
             this.exampleView.render();
@@ -55,8 +49,8 @@ define([
             };
         },
         addShadowRow: function () {
-            this.model.shadows.create(this.newSimpleAttributes());
-            //this.model.trigger('add-row');
+            var collection = this.model.get('collection');
+            collection.create(this.newSimpleAttributes());
         },
         showNewShadowRow: function (simpleShadow) {
             var view = new ShadowParamView({ model: simpleShadow });

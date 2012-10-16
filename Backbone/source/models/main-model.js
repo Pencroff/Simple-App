@@ -23,9 +23,13 @@ define([
             collection: null
         },
         initialize: function () {
+            var collection = this.get('collection');
             this.on('add', this.refreshStyle, this);
             this.on('change', this.refreshStyle, this);
             this.on('remove', this.refreshStyle, this);
+            collection.on('add', this.refreshStyle, this);
+            collection.on('change', this.refreshStyle, this);
+            collection.on('remove', this.refreshStyle, this);
         },
         refreshStyle: function () {
             var collection = this.get('collection'),

@@ -43,5 +43,5 @@ require([
     // Initialize the application view
     var shadowCollection = new ShadowCollection(),
         mainModel = new MainModel({collection: shadowCollection});
-    new AppView({model: { main: mainModel, shadows: shadowCollection } });
+    new AppView({model: mainModel });
 });

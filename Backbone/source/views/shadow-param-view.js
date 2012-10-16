@@ -34,21 +34,10 @@ define([
             result = this.template(this.model.toJSON());
             this.$el.html(result);
         },
-        addRow: function () {
-            var collection = this.model.get('shadows'),
-                element = new SimpleShadow();
-            collection.add(element);
-            this.render();
-            this.model.trigger('add');
-        },
         updateModel: function (e) {
             var htmlElement = e.currentTarget,
-                id = htmlElement.getAttribute("data-cid"),
-                collection = this.model.get("shadows"),
-                element = collection.getByCid(id),
                 attr = htmlElement.getAttribute("data-field");
-            element.set(attr, htmlElement.value);
-            this.model.trigger('change');
+            this.model.set(attr, htmlElement.value);
         },
         deleteRow: function (e) {
             this.model.destroy();
