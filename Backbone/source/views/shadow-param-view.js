@@ -16,23 +16,22 @@ define([
 ], function ($, _, Backbone, SimpleShadow, shadowParamTemplate) {
     'use strict';
     var ShadowParamView = Backbone.View.extend({
+        tagName:  'tr',
         template: _.template(shadowParamTemplate),
         initialize: function () {
             this.model.on('add-row', this.addRow, this);
+            this.model.on('destroy', this.remove, this);
         },
         events: {
             'change .edit-row':	'updateModel',
             'click .delete-row': 'deleteRow'
         },
         render: function () {
-            var collection, result = '';
+            var result;
             if (this.model === null) {
                 return;
             }
-            collection = this.model.get('shadows').models;
-            _.each(collection, function (element) {
-                result += this.template(element.toJSON());
-            }, this);
+            result = this.template(this.model.toJSON());
             this.$el.html(result);
         },
         addRow: function () {
@@ -52,14 +51,7 @@ define([
             this.model.trigger('change');
         },
         deleteRow: function (e) {
-            var id = e.currentTarget.getAttribute("data-cid"),
-                collection = this.model.get('shadows'),
-                element = collection.getByCid(id);
-            if (element) {
-                collection.remove(element);
-                this.render();
-                this.model.trigger('remove');
-            }
+            this.model.destroy();
         }
     });
     return ShadowParamView;

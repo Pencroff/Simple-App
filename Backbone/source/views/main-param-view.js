@@ -31,7 +31,7 @@ define([
                 var attr = element.getAttribute("data-field");
                 this.model.set(attr, element.value);
             }, this);
-            this.model.trigger('change');
+            this.model.trigger('change-simple-model');
         }
     });
     return MainParamView;

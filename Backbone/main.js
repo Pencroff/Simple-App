@@ -35,9 +35,13 @@ require.config({
 });
 
 require([
+    'source/models/main-model',
+    'source/collections/simple-shadows',
     'source/views/main-view'
-], function (AppView) {
+], function (MainModel, ShadowCollection, AppView) {
     'use strict';
     // Initialize the application view
-    new AppView();
+    var shadowCollection = new ShadowCollection(),
+        mainModel = new MainModel({collection: shadowCollection});
+    new AppView({model: { main: mainModel, shadows: shadowCollection } });
 });
