@@ -19,6 +19,8 @@ define([
             text: "Sample text",
             color: 'fff',
             background: 'ccc',
+            fontSize: 24,
+            fontName: 'Arial',
             shadowStyle: '',
             collection: null
         },
@@ -41,16 +43,15 @@ define([
                     var curColor = element.get('color');
                     if (Common.isColor(curColor)) {
                         if (result !== '') {
-                            result = ',\r\n\t\t' + result;
+                            result += ',\r\n\t\t';
                         }
-                        result = ' ' + template(element.toJSON()) + result;
+                        result += template(element.toJSON());
                     }
                 });
                 result = pref + result + ';';
             } else {
                 result = '';
             }
-            //result.replace(new RegExp('\\),', 'g'), '),\r\n');
             this.set('shadowStyle', result);
         }
     });
