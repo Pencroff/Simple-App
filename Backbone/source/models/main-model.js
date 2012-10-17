@@ -41,7 +41,7 @@ define([
                     var curColor = element.get('color');
                     if (Common.isColor(curColor)) {
                         if (result !== '') {
-                            result = ',' + result;
+                            result = ',\r\n\t\t' + result;
                         }
                         result = ' ' + template(element.toJSON()) + result;
                     }
@@ -50,7 +50,7 @@ define([
             } else {
                 result = '';
             }
-            //result.replace(new RegExp('\),', 'g'), '),\r\n');
+            //result.replace(new RegExp('\\),', 'g'), '),\r\n');
             this.set('shadowStyle', result);
         }
     });
