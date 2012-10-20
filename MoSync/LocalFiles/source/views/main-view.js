@@ -34,6 +34,7 @@ define([
             collection.on('add', this.showNewShadowRow, this);
             collection.on('change', this.model.refreshStyle, this.model);
             this.model.on('change', this.render, this);
+            TimeResult();
         },
         render: function () {
             this.exampleView.render();
@@ -49,6 +50,7 @@ define([
             };
         },
         addShadowRow: function () {
+            TimeStart();
             var collection = this.model.get('collection');
             collection.create(this.newSimpleAttributes());
         },
@@ -56,6 +58,7 @@ define([
             var view = new ShadowParamView({ model: simpleShadow });
             view.render();
             $('#shadow-param-collection').append(view.el);
+            TimeResult();
         }
     });
     return MainView;
